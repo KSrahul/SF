@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Point System</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <section class="dashboard-main-section flex">
+        <section class="dashboard-left-section">
+            <div class="internal-logo">
+                <a href="./index.html">
+                    <img src="./assets/icons/internal_simens_logo.svg" alt="">
+                </a>
+            </div>
+            <div class="user-name-img">
+                <img class="user-img" src="./assets/images/profile.jpg" alt="">
+                <p class="auth-user-name">Darshan Singh</p>
+                <p class="auth-user-email">Darshan.singh@siemens.com</p>
+            </div>
+            <ul class="dashboard-left-menus">
+                <li class="dashboard-menus">
+                    <a href="./dashboard.html">
+                        <span class="dashboard-menus-icon">
+                            <img src="./assets/icons/dashboard.svg" alt="">
+                        </span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="dashboard-menus">
+                    <a href="./prediction.html">
+                        <span class="dashboard-menus-icon">
+                            <img src="./assets/icons/predictions.svg" alt="">
+                        </span>
+                        <span>Predictions</span>
+                    </a>
+                </li>
+                <li class="dashboard-menus">
+                    <a href="./profile.html">
+                        <span class="dashboard-menus-icon">
+                            <img src="./assets/icons/profile.svg" alt="">
+                        </span>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="dashboard-menus active">
+                    <a href="./point-system.html">
+                        <span class="dashboard-menus-icon">
+                            <img src="./assets/icons/point.svg" alt="">
+                        </span>
+                        <span>Siemens Points System</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="prediction-link-wrapper">
+                <p class="prediction-para">Want to make <span class="world-cup"> World Cup Prediction? </span></p>
+                <a class="tap-here" href="#">
+                    Tap here
+                </a>
+            </div>
+            </ul>
+        </section>
+        <section class="dashboard-right-section">
+            <h1 class="dashboard-text">Siemens Point System</h1>
+            <div class="competitive-main-wraper">
+                <div class="competitive-internal-wraper">
+                    <p class="sirius-entertainment"> SIRIUS Entertainment </p>
+                    <p class="fantasy-gaming">Are you enthusiastic about Cricket ? This is your chance to show your spirit in the world of Fantasy Gaming and win amazing prizes. Make your predictions wisely and be the leader on the scoreboard.</p>
+                    <p class="siriusly-competitive">Simple, Fun and SIRIUSly competitive !</p>
+                    <div class="flex separate-teams-wraper">
+                        <div class="separate-teams">
+                            <div class="team-name">
+                                <p>Individual Matches</p>
+                            </div>
+                            <div class="flex competitive-row">
+                                <span class="competitive-text">toss prediction</span>
+                                <span class="competitive-point">+ 2</span>
+                            </div>
+                            <div class="flex competitive-row">
+                                <span class="competitive-text">tie / draw</span>
+                                <span class="competitive-point">+ 6</span>
+                            </div>
+                            <div class="flex competitive-row">
+                                <span class="competitive-text">match winner</span>
+                                <span class="competitive-point">+ 4</span>
+                            </div>
+                            <div class="flex competitive-row">
+                                <span class="competitive-text">man of match</span>
+                                <span class="competitive-point">+ 2</span>
+                            </div>
+                        </div>
+                        <div class="separate-teams">
+                            <div class="team-name">
+                                <p>World CUp Matches</p>
+                            </div>
+                            <div class="flex competitive-row">
+                                <span class="competitive-text">4 semi finalist</span>
+                                <span class="competitive-point">+ 2</span>
+                            </div>
+                            <div class="flex competitive-row">
+                                <span class="competitive-text">2 finalist</span>
+                                <span class="competitive-point">+ 1</span>
+                            </div>
+                            <div class="flex competitive-row">
+                                <span class="competitive-text">winner</span>
+                                <span class="competitive-point">+ 5</span>
+                            </div>
+                            <div class="flex competitive-row">
+                                <span class="competitive-text">highest scorer / wicket taker</span>
+                                <span class="competitive-point">+ 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="bonus-credited"> <span> * </span>If world cup prediction is correct then additional 3 bonus points will be credited.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="ham-wraper">
+        <span class="ham"></span>
+        <span class="ham"></span>
+        <span class="ham"></span>
+    </div>
+    <div class="overlay"></div>
+    <div class="loader-container" style="display:none">
+        <svg width="70" height="20">
+            <circle cx="10" cy="10" r="0">
+                <animate attributeName="r" from="0" to="10" values="0;10;10;10;0" dur="1000ms"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle cx="35" cy="10" r="0">
+                <animate attributeName="r" from="0" to="10" values="0;10;10;10;0" begin="200ms" dur="1000ms"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle cx="60" cy="10" r="0">
+                <animate attributeName="r" from="0" to="10" values="0;10;10;10;0" begin="400ms" dur="1000ms"
+                    repeatCount="indefinite" />
+            </circle>
+        </svg>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

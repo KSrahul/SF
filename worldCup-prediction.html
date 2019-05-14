@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WorldCup Prediction</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <section class="dashboard-main-section flex">
+        <section class="dashboard-left-section">
+            <div class="internal-logo">
+                <a href="./index.html">
+                    <img src="./assets/icons/internal_simens_logo.svg" alt="">
+                </a>
+            </div>
+            <div class="user-name-img">
+                <img class="user-img" src="./assets/images/profile.jpg" alt="">
+                <p class="auth-user-name">Darshan Singh</p>
+                <p class="auth-user-email">Darshan.singh@siemens.com</p>
+            </div>
+            <ul class="dashboard-left-menus">
+                <li class="dashboard-menus active">
+                    <a href="./dashboard.html">
+                        <span class="dashboard-menus-icon">
+                            <img src="./assets/icons/dashboard.svg" alt="">
+                        </span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="dashboard-menus">
+                    <a href="./prediction.html">
+                        <span class="dashboard-menus-icon">
+                            <img src="./assets/icons/predictions.svg" alt="">
+                        </span>
+                        <span>Predictions</span>
+                    </a>
+                </li>
+                <li class="dashboard-menus">
+                    <a href="./profile.html">
+                        <span class="dashboard-menus-icon">
+                            <img src="./assets/icons/profile.svg" alt="">
+                        </span>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="dashboard-menus">
+                    <a href="./point-system.html">
+                        <span class="dashboard-menus-icon">
+                            <img src="./assets/icons/point.svg" alt="">
+                        </span>
+                        <span>Siemens Points System</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="prediction-link-wrapper">
+                <p class="prediction-para">Want to make <span class="world-cup"> World Cup Prediction? </span></p>
+                <a class="tap-here" href="#">
+                    Tap here
+                </a>
+            </div>
+            </ul>
+        </section>
+        <section class="dashboard-right-section">
+            <div class="flex prediction-header">
+                <h1 class="dashboard-text">World Cup Prediction</h1>
+            </div>
+            <div class="match-container match-details match-prediction">
+                <div class="match-prediction-internal world-cup-edit">
+                    <div class="make-pred-wraper flex">
+                        <div>
+                            <p class="make-pred">Match Prediction Detail</p>
+                            <p class="gain-points">Now gain points on each correct prediction of a match </p>
+                        </div>
+                        <div class="edit-prediction">
+                            <button type="button" class="header-btn save-pred" data-toggle="modal"
+                                data-target="#congrats">
+                                Save prediction
+                            </button>
+                        </div>
+                    </div>
+                    <div class="world-cup-prediction">
+                        <div class="flex toss-points">
+                            <p class="win-toss">Who will be the Four - Semi Finalist</p>
+                            <p class="points">+2 POINTS</p>
+                        </div>
+                        <div class="prediction-wraper">
+                            <div class="flex finalist-header">
+                                <div class="team-score">
+                                    <span>Team</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>M</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>W</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>L</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>Pts</span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">India</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">New Zealand</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">south africa</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">West Indies</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">India</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">New Zealand</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">south africa</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">West Indies</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">India</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">New Zealand</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">south africa</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">West Indies</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="world-cup-prediction two-semi-finalist">
+                        <div class="flex toss-points">
+                            <p class="win-toss">Who will be the Two - Semi Finalist?</p>
+                            <p class="points">+1 POINTS</p>
+                        </div>
+                        <div class="prediction-wraper">
+                            <div class="flex finalist-header">
+                                <div class="team-score">
+                                    <span>Team</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>M</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>W</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>L</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>Pts</span>
+                                </div>
+                            </div>
+                            <div class="apended prediction-wraper">
+                                <div class="flex finalist-header team-logo">
+                                    <div class="team-score player-name-img">
+                                        <span class="team-player-img">
+                                            <img src="./assets/images/profile.jpg" alt="">
+                                        </span>
+                                        <span class="player-name">West Indies</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>13</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>9</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>112</span>
+                                    </div>
+
+                                    <div class="team-score">
+                                        <span class="plus">
+                                            <img src="./assets/icons/plus.svg" alt="">
+                                        </span>
+                                        <span class="minus">
+                                            <img src="./assets/icons/minus.svg" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex finalist-header team-logo">
+                                    <div class="team-score player-name-img">
+                                        <span class="team-player-img">
+                                            <img src="./assets/images/profile.jpg" alt="">
+                                        </span>
+                                        <span class="player-name">West Indies</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>13</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>9</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>112</span>
+                                    </div>
+
+                                    <div class="team-score">
+                                        <span class="plus">
+                                            <img src="./assets/icons/plus.svg" alt="">
+                                        </span>
+                                        <span class="minus">
+                                            <img src="./assets/icons/minus.svg" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex finalist-header team-logo">
+                                    <div class="team-score player-name-img">
+                                        <span class="team-player-img">
+                                            <img src="./assets/images/profile.jpg" alt="">
+                                        </span>
+                                        <span class="player-name">West Indies</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>13</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>9</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>112</span>
+                                    </div>
+
+                                    <div class="team-score">
+                                        <span class="plus">
+                                            <img src="./assets/icons/plus.svg" alt="">
+                                        </span>
+                                        <span class="minus">
+                                            <img src="./assets/icons/minus.svg" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex finalist-header team-logo">
+                                    <div class="team-score player-name-img">
+                                        <span class="team-player-img">
+                                            <img src="./assets/images/profile.jpg" alt="">
+                                        </span>
+                                        <span class="player-name">West Indies</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>13</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>9</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="team-score">
+                                        <span>112</span>
+                                    </div>
+
+                                    <div class="team-score">
+                                        <span class="plus">
+                                            <img src="./assets/icons/plus.svg" alt="">
+                                        </span>
+                                        <span class="minus">
+                                            <img src="./assets/icons/minus.svg" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two-final">
+                        <div class="flex toss-points">
+                            <p class="win-toss">Who will be the Winner?</p>
+                            <p class="points">+5 POINTS</p>
+                        </div>
+                        <div class="two-finalist-apend prediction-wraper">
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">West Indies</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex finalist-header team-logo">
+                                <div class="team-score player-name-img">
+                                    <span class="team-player-img">
+                                        <img src="./assets/images/profile.jpg" alt="">
+                                    </span>
+                                    <span class="player-name">West Indies</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>13</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>9</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>4</span>
+                                </div>
+                                <div class="team-score">
+                                    <span>112</span>
+                                </div>
+
+                                <div class="team-score">
+                                    <span class="plus">
+                                        <img src="./assets/icons/plus.svg" alt="">
+                                    </span>
+                                    <span class="minus">
+                                        <img src="./assets/icons/minus.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="select-highest-wraper">
+                        <div class="flex toss-points">
+                            <p class="win-toss">Who will be the Highest Wicket Taker?</p>
+                            <p class="points">+2 POINTS</p>
+                        </div>
+                        <p class="select-highest-team">To make prediction for highest wicket taker, <span> Select Team
+                                -> Select Player </span></p>
+                        <div class="flex separate-teams-wraper">
+                            <div class="separate-teams">
+                                <div class="team-name">
+                                    <p>select team</p>
+                                </div>
+                                <label class="player-row">
+                                    <div class="radio-check">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">India</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team1">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                                <label class="player-row">
+                                    <div class="radio-check">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">New Zealand</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team1">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                                <label class="player-row">
+                                    <div class="radio-check">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">south africa</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team1">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                                <label class="player-row">
+                                    <div class="radio-check">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">West Indies</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team1">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                                <label class="player-row">
+                                    <div class="radio-check">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">Bangladesh</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team1">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="separate-teams">
+                                <div class="team-name">
+                                    <p>select player</p>
+                                </div>
+                                <label class="player-row">
+                                    <div class="radio-check2">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">Nitish Kumar</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team2">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                                <label class="player-row">
+                                    <div class="radio-check2">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">Nitish Kumar</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team2">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                                <label class="player-row">
+                                    <div class="radio-check2">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">Nitish Kumar</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team2">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                                <label class="player-row">
+                                    <div class="radio-check2">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">Nitish Kumar</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team2">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                                <label class="player-row">
+                                    <div class="radio-check2">
+                                        <div class="player-name-img">
+                                            <span class="team-player-img">
+                                                <img src="./assets/images/profile.jpg" alt="">
+                                            </span>
+                                            <span class="player-name">Nitish Kumar</span>
+                                        </div>
+                                        <input class="def_radio" type="radio" name="team2">
+                                        <div class="radio-btn"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-highest-wraper">
+                            <div class="flex toss-points">
+                                <p class="win-toss">Who will be the Highest Run Scorer</p>
+                                <p class="points">+2 POINTS</p>
+                            </div>
+                            <p class="select-highest-team">To make prediction for highest run scorer, <span> Select Team
+                                    -> Select Player </span></p>
+                            <div class="flex separate-teams-wraper">
+                                <div class="separate-teams">
+                                    <div class="team-name">
+                                        <p>select team</p>
+                                    </div>
+                                    <label class="player-row">
+                                        <div class="radio-check">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">India</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team1">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                    <label class="player-row">
+                                        <div class="radio-check">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">New Zealand</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team1">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                    <label class="player-row">
+                                        <div class="radio-check">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">south africa</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team1">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                    <label class="player-row">
+                                        <div class="radio-check">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">West Indies</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team1">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                    <label class="player-row">
+                                        <div class="radio-check">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">Bangladesh</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team1">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="separate-teams">
+                                    <div class="team-name">
+                                        <p>select player</p>
+                                    </div>
+                                    <label class="player-row">
+                                        <div class="radio-check2">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">Nitish Kumar</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team2">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                    <label class="player-row">
+                                        <div class="radio-check2">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">Nitish Kumar</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team2">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                    <label class="player-row">
+                                        <div class="radio-check2">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">Nitish Kumar</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team2">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                    <label class="player-row">
+                                        <div class="radio-check2">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">Nitish Kumar</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team2">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                    <label class="player-row">
+                                        <div class="radio-check2">
+                                            <div class="player-name-img">
+                                                <span class="team-player-img">
+                                                    <img src="./assets/images/profile.jpg" alt="">
+                                                </span>
+                                                <span class="player-name">Nitish Kumar</span>
+                                            </div>
+                                            <input class="def_radio" type="radio" name="team2">
+                                            <div class="radio-btn"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="loader-container">
+        <svg width="70" height="20">
+            <circle cx="10" cy="10" r="0">
+                <animate attributeName="r" from="0" to="10" values="0;10;10;10;0" dur="1000ms"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle cx="35" cy="10" r="0">
+                <animate attributeName="r" from="0" to="10" values="0;10;10;10;0" begin="200ms" dur="1000ms"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle cx="60" cy="10" r="0">
+                <animate attributeName="r" from="0" to="10" values="0;10;10;10;0" begin="400ms" dur="1000ms"
+                    repeatCount="indefinite" />
+            </circle>
+        </svg>
+    </div>
+    <div class="ham-wraper">
+        <span class="ham"></span>
+        <span class="ham"></span>
+        <span class="ham"></span>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal fade congrats-modal" role="dialog" id="congrats">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <span class="congrats-icon">
+                    <img src="./assets/icons/congrats.svg" alt="">
+                </span>
+                <p class="congrats">Congratulations!</p>
+                <p class="successfully-pred">We have successfully saved the match prediction done by you. Now go ahead
+                    and participate further in more matches</p>
+                <span class="close-mod" data-dismiss="modal">
+                    <img src="./assets/icons/cross-add.svg" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

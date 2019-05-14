@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign_up</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <section class="auth-section relative">
+        <section class="authentication-internal flex">
+            <div class="auth-left-section">
+                <div class="internal-logo">
+                    <a href="./index.html">
+                        <img src="./assets/icons/internal_simens_logo.svg" alt="">
+                    </a>
+                </div>
+                <p class="authentication-heading">Create An account</p>
+                <p class="authentication-para">Start Now & Predict the Winning Team to Get Rewards</p>
+                <form action="">
+                    <div class="main-input-container">
+                        <div class="flex inputs-container">
+                            <div class="inputs-fields relative">
+                                <input class="float-inputs" type="name" required id="firstName">
+                                <span class="input-placeholders">Name</span>
+                            </div>
+                            <div class="inputs-fields relative">
+                                <input class="float-inputs" type="email" required>
+                                <span class="input-placeholders">Email Id</span>
+                            </div>
+                        </div>
+                        <div class="flex inputs-container">
+                            <div class="inputs-fields relative">
+                                <input class="float-inputs" type="text" required>
+                                <span class="input-placeholders">Department</span>
+                            </div>
+                            <div class="inputs-fields relative">
+                                <input class="float-inputs" type="text" required>
+                                <span class="input-placeholders">Location</span>
+                            </div>
+                        </div>
+                        <div class="flex inputs-container">
+                            <div class="inputs-fields relative">
+                                <input class="float-inputs" type="text" required>
+                                <span class="input-placeholders">Phone Number (optional)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-hov orange-btn-hov relative">
+                            <button class="hov-btn-link">
+                                <span class="login-continue-text">
+                                    Sign up to Continue
+                                </span>
+                                <span class="aero-icon absolute">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" viewBox="0 0 120 100">
+                                        <path fill="#FFF" fill-rule="nonzero"
+                                            d="M75.572 3.51a3.868 3.868 0 0 0-5.52 0c-1.492 1.492-1.492 3.975 0 5.464l27.99 27.99H5.68c-2.153 0-3.92 1.71-3.92 3.864a3.935 3.935 0 0 0 3.92 3.92h92.362l-27.99 27.937c-1.492 1.545-1.492 4.032 0 5.52a3.868 3.868 0 0 0 5.52 0l34.616-34.615c1.492-1.493 1.492-3.976 0-5.465L75.572 3.51z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
+                    </div>
+                    <p class="redirect-auth">Already have an account? <a href="./login.html"> Login Now </a></p>
+                </form>
+            </div>
+            <div class="auth-right-section">
+                <img src="./assets/images/authentication_play.png" alt="">
+            </div>
+            <div class="auth-aero-top absolute">
+                <img src="./assets/icons/auth_aero_top.png" alt="">
+            </div>
+            <div class="auth-aero-bottom absolute">
+                <img src="./assets/icons/auth_aero_bottom.png" alt="">
+            </div>
+        </section>
+
+        <div class="auth-footer">
+            <a href="./index.html">www.siemenscricketfantasy.com</a>
+        </div>
+    </section>
+    <div class="loader-container">
+        <svg width="70" height="20">
+            <circle cx="10" cy="10" r="0">
+                <animate attributeName="r" from="0" to="10" values="0;10;10;10;0" dur="1000ms"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle cx="35" cy="10" r="0">
+                <animate attributeName="r" from="0" to="10" values="0;10;10;10;0" begin="200ms" dur="1000ms"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle cx="60" cy="10" r="0">
+                <animate attributeName="r" from="0" to="10" values="0;10;10;10;0" begin="400ms" dur="1000ms"
+                    repeatCount="indefinite" />
+            </circle>
+        </svg>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
