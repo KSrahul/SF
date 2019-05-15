@@ -12,6 +12,7 @@ window.onload = function () {
     setTimeout(function() {
         if (document.readyState == "complete") {
             document.querySelector(".loader-container").className = "loader-container remove-loader";
+            document.body.classList.remove("scroll-hide");
         } else {
             document.querySelector(".loader-container").className = "loader-container";
         }
