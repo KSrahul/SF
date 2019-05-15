@@ -4,9 +4,6 @@ window.onload = function () {
     setTimeout(function () {
         if (document.readyState == "complete") {
             document.querySelector(".loader-container").classList.add("remove-loader");
-            setTimeout(function () {
-                document.querySelector(".loader-container").remove();
-            }, 1600);
             document.body.classList.remove("scroll-hide");
         } else {
             document.querySelector(".loader-container").classList.remove("remove-loader");
