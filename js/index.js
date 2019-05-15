@@ -2,7 +2,7 @@ window.onload = function () {
     // loader js
     document.body.classList.toggle("scroll-hide");
     setTimeout(function () {
-        if (document.readyState === "complete") {
+        if (document.readyState == "complete") {
             document.querySelector(".loader-container").classList.add("remove-loader");
             setTimeout(function () {
                 document.querySelector(".loader-container").remove();
@@ -91,35 +91,35 @@ window.onload = function () {
     // onfocusout input label down (end)
 
     // world cup prediction
-    // if (document.querySelectorAll(".team-logo > .team-score:last-child")) {
-    //     document.querySelectorAll(".team-logo > .team-score:last-child").forEach(function (predPlus) {
-    //         predPlus.addEventListener("click", function () {
-    //             const elementApend = this.parentNode;
-    //             const apendWraper = document.querySelector(".apended");
-    //             const withContent = elementApend.cloneNode(true);
-    //             apendWraper.appendChild(withContent);
-    //             document.querySelector(".two-semi-finalist").classList.add("show");
-    //             document.querySelector(".two-semi-finalist").scrollIntoView(false);
-    //             this.children[1].classList.add("show-minus");
-    //             this.childNodes[1].remove();
-    //             this.style.pointerEvents = "none";
-    //             document.querySelectorAll(".apended > .team-logo > .team-score:last-child").forEach(function (twoFinalist) {
-    //                 twoFinalist.onclick = function () {
-    //                     const twoFinalParent = this.parentNode;
-    //                     const twofinal = document.querySelector(".two-finalist-apend");
-    //                     const twoFinalContent = twoFinalParent.cloneNode(true);
-    //                     twofinal.appendChild(twoFinalContent);
-    //                     this.children[1].classList.add("show-minus");
-    //                     this.childNodes[1].remove();
-    //                     this.style.pointerEvents = "none";
-    //                     document.querySelector(".two-final").classList.remove("hide");
-    //                     document.querySelector(".two-final").scrollIntoView(false);
-    //                 }
-    //             })
+    if (document.querySelectorAll(".team-logo > .team-score:last-child")) {
+        document.querySelectorAll(".team-logo > .team-score:last-child").forEach(function (predPlus) {
+            predPlus.addEventListener("click", function () {
+                const elementApend = this.parentNode;
+                const apendWraper = document.querySelector(".apended");
+                const withContent = elementApend.cloneNode(true);
+                apendWraper.appendChild(withContent);
+                document.querySelector(".two-semi-finalist").classList.add("show");
+                document.querySelector(".two-semi-finalist").scrollIntoView(false);
+                this.children[1].classList.add("show-minus");
+                this.childNodes[1].remove();
+                this.style.pointerEvents = "none";
+                document.querySelectorAll(".apended > .team-logo > .team-score:last-child").forEach(function (twoFinalist) {
+                    twoFinalist.onclick = function () {
+                        const twoFinalParent = this.parentNode;
+                        const twofinal = document.querySelector(".two-finalist-apend");
+                        const twoFinalContent = twoFinalParent.cloneNode(true);
+                        twofinal.appendChild(twoFinalContent);
+                        this.children[1].classList.add("show-minus");
+                        this.childNodes[1].remove();
+                        this.style.pointerEvents = "none";
+                        document.querySelector(".two-final").classList.remove("hide");
+                        document.querySelector(".two-final").scrollIntoView(false);
+                    }
+                })
 
-    //         })
-    //     })
-    // }
+            })
+        })
+    }
     // world cup prediction (end)
     // reusable functions for form input transition
     function addInputTransition(getClass) {
