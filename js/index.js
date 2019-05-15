@@ -1,14 +1,21 @@
 window.onload = function () {
     // loader js
     document.body.classList.toggle("scroll-hide");
-    setTimeout(function () {
+    // setTimeout(function () {
+    //     if (document.readyState == "complete") {
+    //         document.querySelector(".loader-container").classList.add("remove-loader");
+    //         document.body.classList.remove("scroll-hide");
+    //     } else {
+    //         document.querySelector(".loader-container").classList.remove("remove-loader");
+    //     }
+    // }, 1500)
+    setTimeout(function() {
         if (document.readyState == "complete") {
-            document.querySelector(".loader-container").classList.add("remove-loader");
-            document.body.classList.remove("scroll-hide");
+            document.querySelector(".loader-container").className = "loader-container remove-loader";
         } else {
-            document.querySelector(".loader-container").classList.remove("remove-loader");
+            document.querySelector(".loader-container").className = "loader-container";
         }
-    }, 1500)
+    }, 2500)
     // loader js(end)
 
     // profile css
